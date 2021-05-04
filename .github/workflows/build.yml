@@ -71,26 +71,9 @@ jobs:
         bash -x build-hal.sh
       shell: bash
     
-    - name : Upload hybriss-boot image
-      uses: actions/upload-artifact@master
-      with:
-        name: hybris-boot image
-        path: /home/runner/work/halium/out/target/product/land/hybris-boot.img
-
-    - name : Upload halium-boot image
-      uses: actions/upload-artifact@master
-      with:
-        name: halium-boot image
-        path: /home/runner/work/halium/out/target/product/land/halium-boot.img
-
     - name : Upload recovery image
       uses: actions/upload-artifact@master
       with:
         name: Recovery image
         path: /home/runner/work/halium/out/target/product/land/recovery.img
 
-    - name : Upload system image
-      uses: actions/upload-artifact@master
-      with:
-        name: System image
-        path: /home/runner/work/halium/out/target/product/land/system.img
