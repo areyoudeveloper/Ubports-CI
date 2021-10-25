@@ -7,9 +7,9 @@
     <remote name="ubp" 
             fetch="https://github.com/ubports/" revision="halium-7.1" 
             />
-    <project path="device/mixedmi/lantoni" name="device_mixedmi_lantoni" revision="hal7.1" remote="kek" />
+    <project path="device/mixedmi/lantoni" name="device_mixedmi_lantoni" remote="kek" />
     <project path="kernel/mixedmi/lantoni" name="android_kernel_mixedmi_lantoni" revision="halium-7.1" remote="kek" />
-    <project path="vendor/mixedmi" name="vendor_mixedmi_lantoni" revision="hal7.1" remote="kek" />
+    <project path="vendor/mixedmi" name="vendor_mixedmi_lantoni" remote="kek" />
   <!-- GStreamer Camera Fix Remote-->
     <remote name="peat" fetch="https://github.com/peat-psuwit" />
   <!-- GStreamer Camera Repo -->
