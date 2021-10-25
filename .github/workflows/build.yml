@@ -58,7 +58,7 @@ jobs:
         cd $ANDROID_ROOT
         repo init -u https://github.com/Halium/android -b halium-7.1 --depth=1
         mkdir -p $ANDROID_ROOT/.repo/local_manifests
-        wget https://raw.githubusercontent.com/Ubports-Land/Ubports-CI/master/"$VENDOR"_"$DEVICE".xml -O $ANDROID_ROOT/.repo/local_manifests/$DEVICE.xml
+        wget https://raw.githubusercontent.com/areyoudeveloper/Ubports-CI/master/"$VENDOR"_"$DEVICE".xml -O $ANDROID_ROOT/.repo/local_manifests/$DEVICE.xml
         repo sync -j8 -c --no-clone-bundle --no-tags
     
     - name: Build HAL
@@ -75,22 +75,22 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: hybris-boot image
-        path: /home/runner/work/halium/out/target/product/land/hybris-boot.img
+        path: /home/runner/work/halium/out/target/product/lantoni/hybris-boot.img
 
     - name : Upload halium-boot image
       uses: actions/upload-artifact@master
       with:
         name: halium-boot image
-        path: /home/runner/work/halium/out/target/product/land/halium-boot.img
+        path: /home/runner/work/halium/out/target/product/lantoni/halium-boot.img
 
     - name : Upload recovery image
       uses: actions/upload-artifact@master
       with:
         name: Recovery image
-        path: /home/runner/work/halium/out/target/product/land/recovery.img
+        path: /home/runner/work/halium/out/target/product/lantoni/recovery.img
 
     - name : Upload system image
       uses: actions/upload-artifact@master
       with:
         name: System image
-        path: /home/runner/work/halium/out/target/product/land/system.img
+        path: /home/runner/work/halium/out/target/product/lantoni/system.img
