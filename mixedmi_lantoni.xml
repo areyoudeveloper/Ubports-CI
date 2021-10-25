@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="kek"
-            fetch="https://github.com/areyoudeveloper" />
+            fetch="https://github.com/areyoudeveloper"
+            revision="hal7.1"
+            />
     <remote name="beidl" 
             fetch="https://github.com/fredldotme" />
     <remote name="ubp" 
