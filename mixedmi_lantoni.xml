@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="kek"
-            fetch="https://github.com/areyoudeveloper"
-            revision="hal7.1" />
+            fetch="https://github.com/areyoudeveloper" />
     <remote name="beidl" 
             fetch="https://github.com/fredldotme" />
     <remote name="ubp" 
             fetch="https://github.com/ubports/" revision="halium-7.1" 
             />
-    <project path="device/mixedmi/lantoni" name="device_mixedmi_lantoni" remote="kek" />
-    <project path="kernel/mixedmi/lantoni" name="android_kernel_mixedmi_lantoni" remote="kek" />
-    <project path="vendor/mixedmi" name="vendor_mixedmi_lantoni" remote="kek" />
+    <project path="device/mixedmi/lantoni" name="device_mixedmi_lantoni" remote="kek" revision="hal7.1" />
+    <project path="kernel/mixedmi/lantoni" name="android_kernel_mixedmi_lantoni" remote="kek" revision="halium-7.1"/>
+    <project path="vendor/mixedmi" name="vendor_mixedmi_lantoni" remote="kek" revision="hal7.1" />
   <!-- GStreamer Camera Fix Remote-->
     <remote name="peat" fetch="https://github.com/peat-psuwit" />
   <!-- GStreamer Camera Repo -->
