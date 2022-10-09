@@ -17,6 +17,5 @@
       <project path="halium/droidmedia" name="droidmedia" remote="peat" revision="fix-raw-data" />
       
     <remote name="gpg" fetch="https://github.com/ubports/android_external_gpg" />
-      <remove-project path="external/gpg" name="gpg" />
       <project path="external/gpg" name="gpg" remote="gpg" revision="master" />
 </manifest> 
